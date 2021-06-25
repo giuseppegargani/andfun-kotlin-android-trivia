@@ -35,6 +35,13 @@ import android.content.pm.ResolveInfo
 import android.content.pm.PackageManager
 
 
+/*TODO    dopo aver controllato la dipendenza a due livelli si cambiano tutte le azioni con il controllo degli argomenti
+    DOPO AVER INSERITO I DUE ARGOMENTI NEL FRAMMENTO DI DESTINAZIONE SI AGGIORNA L'AZIONE view.findNavController().navigate(GameFragmentDirections.actionGameFragmentToGameWonFragment(numQuestions, questionIndex))
+    il nome degli argomenti può anche essere diverso ma conta ordine
+    nel frammento finale si recupera il valore degli argomenti: val args = GameWonFragmentArgs.fromBundle(arguments!!)
+    e (in onCreateView) si provvede a fare un Toast all'inizializzazione del frammento    Toast.makeText(context, "NumCorrect: ${args.numCorrect}, NumQuestions: ${args.numQuestions}", Toast.LENGTH_LONG).show()
+ */
+
 
 class GameWonFragment : Fragment() {
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
