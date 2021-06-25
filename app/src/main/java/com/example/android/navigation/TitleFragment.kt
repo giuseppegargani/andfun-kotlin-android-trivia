@@ -26,12 +26,22 @@ import androidx.navigation.Navigation
 import androidx.navigation.findNavController
 import com.example.android.navigation.databinding.FragmentTitleBinding
 
+//TODO Aggiungi un fragment ad NavGraph
+//TODO Crea un menù "overflow_menu" e "Menu"   e una voce "About us" con lo stesso ID del NavGraph
+/*TODO  in OnCreateView aggiungi il menù setHasOptionsMenu(true)     prima di      return binding.root
+    override onCreateOptionsMenu    inflater?.inflate(R.menu.overflow_menu, menu)   (dopo super)
+    override onOptionsItemSelected
+    return NavigationUI.onNavDestinationSelected(item!!,
+           view!!.findNavController())
+           || super.onOptionsItemSelected(item)
+ */
+
 class TitleFragment : Fragment() {
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {
         val binding: FragmentTitleBinding = DataBindingUtil.inflate(
                 inflater, R.layout.fragment_title, container, false)
-        binding.playButton.setOnClickListener (
+        binding.playButton.setOnClickListener(
                 Navigation.createNavigateOnClickListener(R.id.action_titleFragment_to_gameFragment))
         // TODO (02) Create the new menu resource
         // Right click on the res folder within the Android project and select New Resource File
