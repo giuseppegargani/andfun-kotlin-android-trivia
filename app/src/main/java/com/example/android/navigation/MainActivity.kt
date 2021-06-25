@@ -35,8 +35,6 @@ class MainActivity : AppCompatActivity() {
         // TODO (01) Find the navController from myNavHostFragment
         //TODO val navController = this.findNavController(R.id.myNavHostFragment)
         //TODO NavigationUI.setupActionBarWithNavController(this, navController)
-        val navController = this.findNavController(R.id.myNavHostFragment)
-        NavigationUI.setupActionBarWithNavController(this, navController)
 
 
         // Since we're using KTX, you can call this.findNavController
@@ -48,11 +46,6 @@ class MainActivity : AppCompatActivity() {
             }
          */
 
-    }
-
-    override fun onSupportNavigateUp(): Boolean {
-        val navController = this.findNavController(R.id.myNavHostFragment)
-        return navController.navigateUp()
     }
 
     // TODO (03) Override onSupportNavigateUp
