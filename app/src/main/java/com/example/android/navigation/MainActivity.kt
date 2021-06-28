@@ -23,6 +23,41 @@ import androidx.navigation.findNavController
 import androidx.navigation.ui.NavigationUI
 import com.example.android.navigation.databinding.ActivityMainBinding
 
+/*TODO - 1 Aggiungi il frammento con le regole dentro il NavGraph
+ */
+/*TODO - 2 Crea il menù per il cassetto laterale (navdrawer_menu) - rules e about (che ha come icona android)
+ */
+/*TODO - 3 Aggiungi il cassetto nel Layout
+    Si mette nel layout principale (ma credo si possa mettere dove si vuole)
+    e dove c'è il NavHostFragment!!!!!!
+ */
+/*TODO - 4 Aggiungi la NavigationView in fondo all DrawerLayout
+ */
+/*TODO - 5 in Main Activity si inizializzano le variabili DrawerLayout e AppBarConfiguration
+        e il DrawerLayout si inizializza con le la variabile binding di drawerLayout
+ */
+/*TODO - 6 Aggiungi il DrawerLayout come terzo parametro di setupActionBarWithNavController
+    Si deve anche dichiarare e inizializzare una variabile con NavController
+ */
+
+/*TODO - 7 Crea una appBarConfiguration
+    Che abbia come parametri il navController.graph e il drawerLayout
+ */
+
+/*TODO - 8  Aggancia il NavigatioUI con la navigationView
+ */
+
+/*TODO - 9 Fai override di onSupportNavigateUp
+    override fun onSupportNavigateUp(): Boolean {
+    val navController = this.findNavController(R.id.myNavHostFragment)
+    return NavigationUI.navigateUp(drawerLayout, navController)
+    }
+ */
+/*TODO - 10 Metti Header
+    app:headerLayout="@layout/nav_header"
+ */
+
+
 class MainActivity : AppCompatActivity() {
     // TODO (05) Add private lateinit vars drawerLayout and appBarConfiguration
     override fun onCreate(savedInstanceState: Bundle?) {
