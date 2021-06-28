@@ -61,7 +61,9 @@ import com.example.android.navigation.databinding.ActivityMainBinding
  */
 
 /*TODO - 5 Si crea la funzione che materialmente lancia l'intento (shareSuccess()) (e ha come argomento una funzione di callback per intento)
-    startActivity(getShareIntent())
+    private fun shareSuccess() {
+   startActivity(getShareIntent())
+}
 
  */
 
