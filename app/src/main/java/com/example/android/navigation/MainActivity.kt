@@ -56,7 +56,7 @@ import com.example.android.navigation.databinding.ActivityMainBinding
  */
 
 /*TODO - 6 Correggi NavDirections in qualsiasi azione di navigazione
-
+    IL NOME E' DIVERSO PER OGNI FRAGMENT: GameWonFragmentDirections
  */
 
 class MainActivity : AppCompatActivity() {
