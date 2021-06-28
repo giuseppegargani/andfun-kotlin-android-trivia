@@ -43,7 +43,6 @@ import com.example.android.navigation.databinding.ActivityMainBinding
 /*TODO - 3 Nel frammento di destinazione inserisci i parametri desiderati per il controllo
     in questo caso il frammento di destinazione è gameWon e perciò si vanno ad inserire lì
     Si inseriscono da NavGraph
-    Si può verificare il nome dei parametri non è importante?!?!?!?
  */
 
 /* TODO - 4 Inseriamo i parametri all'interno della istruzione di navigazione
