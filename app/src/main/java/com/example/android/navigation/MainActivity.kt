@@ -21,6 +21,26 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import com.example.android.navigation.databinding.ActivityMainBinding
 
+/*TODO - 1 Creare un nuovo frammento
+    Si possono anche caricare Fragment anche non blank
+ */
+
+/*TODO - 2 Pulisci il frammento lasciando solo la parte onCreateView
+ */
+
+/*
+TODO - 3
+    DOPO AVER CONTROLLATO CHE SI SIA CREATO IL LAYOUT DI BINDING NELLA VIEW IN XML CARICA LA VIEW
+    con DataBindingUtil
+    val binding = DataBindingUtil.inflate<FragmentTitleBinding>(inflater, R.layout.fragment_title, container, false)
+    return binding.root
+    SE ci dovessero essere problemi di collegamento con la classe appena create fai Invalidate e restart()
+ */
+
+/*TODO - 4 Carica il frammento nel layout della Activity
+    O dove vuoi che sia caricato
+ */
+
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
