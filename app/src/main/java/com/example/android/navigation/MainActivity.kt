@@ -49,9 +49,14 @@ import com.example.android.navigation.databinding.ActivityMainBinding
         Navigation.createNavigateOnClickListener(R.id.action_titleFragment_to_gameFragment))
  */
 
-/*TODO - 6 SINTESI:
+/*TODO - SINTESI:
     La cosa più importante è come collegare con un eventListener su un pulsante delle istruzioni di navigazione
     ma non toglie che gli eventi possano essere anche altri
+ */
+
+/*TODO - APPROFONDIMENTI:
+    EVENTO DI DRAG: https://developer.android.com/guide/topics/ui/drag-drop
+
  */
 
 
