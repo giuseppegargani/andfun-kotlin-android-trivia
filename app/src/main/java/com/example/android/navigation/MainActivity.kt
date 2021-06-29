@@ -25,34 +25,60 @@ import com.example.android.navigation.databinding.ActivityMainBinding
 
 /*TODO - 1 Aggiungi il frammento con le regole dentro il NavGraph
  */
+
 /*TODO - 2 Crea il menù per il cassetto laterale (navdrawer_menu) - rules e about (che ha come icona android)
  */
+
 /*TODO - 3 Aggiungi il cassetto nel Layout
     Si mette nel layout principale (ma credo si possa mettere dove si vuole)
     e dove c'è il NavHostFragment!!!!!!
+    entrambi matchParent e id uguale a drawerLayout
+    <androidx.drawerlayout.widget.DrawerLayout
+       android:id="@+id/drawerLayout"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
  */
+
 /*TODO - 4 Aggiungi la NavigationView in fondo all DrawerLayout
+    come id ha "navView", e come larghezza ha wrapContent, e come layout_gravity "start" e con un riferimento al menù (app:menu)
+        <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navView"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:menu="@menu/navdrawer_menu" />
  */
+
 /*TODO - 5 in Main Activity si inizializzano le variabili DrawerLayout e AppBarConfiguration
         e il DrawerLayout si inizializza con le la variabile binding di drawerLayout
+        drawerLayout = binding.drawerLayout
  */
-/*TODO - 6 Aggiungi il DrawerLayout come terzo parametro di setupActionBarWithNavController
+
+/*TODO - 6 Imposta ActionBar sulla base del drawerLayout
+   Aggiungi il DrawerLayout come terzo parametro di setupActionBarWithNavController
     Si deve anche dichiarare e inizializzare una variabile con NavController
+    NavigationUI.setupActionBarWithNavController(this, navController, drawerLayout)
+
  */
 
 /*TODO - 7 Crea una appBarConfiguration
     Che abbia come parametri il navController.graph e il drawerLayout
+    Si istanzia dandogli come parametri il graph di navController e il drawerLayout!!!!!!
+    appBarConfiguration = AppBarConfiguration(navController.graph, drawerLayout)
  */
 
-/*TODO - 8  Aggancia il NavigatioUI con la navigationView
+/*TODO - 8  Collega il NavigatioUI con la navigationView
+    Prima si passa il navController!!!
+    NavigationUI.setupWithNavController(navController, binding.navView)
  */
 
 /*TODO - 9 Fai override di onSupportNavigateUp
     override fun onSupportNavigateUp(): Boolean {
     val navController = this.findNavController(R.id.myNavHostFragment)
-    return NavigationUI.navigateUp(drawerLayout, navController)
+    return NavigationUI.navigateUp(navController, drawerLayout)
     }
  */
+
 /*TODO - 10 Metti Header
     app:headerLayout="@layout/nav_header"
  */
